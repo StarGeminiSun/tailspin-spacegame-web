@@ -2,14 +2,12 @@ trigger:
 - 'master'
 
 pool:
-  vmImage: 'windows2016'
-  demands:
-    - npm
+  vmImage: 'ubuntu-latest'
+
 
 variables:
   buildConfiguration: 'Release'
-  wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '2.1.505'
+
 
 steps:
 - task: DotNetCoreInstaller@0
